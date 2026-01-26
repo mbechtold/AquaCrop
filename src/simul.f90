@@ -268,7 +268,6 @@ use ac_global, only: ActiveCells, &
                      IrriMode_Generate, &
                      IrriMode_Inet, &
                      KsAny, &
-                     KsAny, &
                      KsSalinity, &
                      KsTemperature, &
                      LengthCanopyDecline, &
@@ -5578,7 +5577,6 @@ subroutine BUDGET_module(dayi, TargetTimeVal, TargetDepthVal, VirtualTimeCC, &
         ! added 7.3 - premature end
         if (dayi == GetSimulation_DayNrPrematureEnd()) then
             call SetCCiActual(0._dp)
-        else
             call SetNoMoreCrop(.true.)
         end if
     end if
