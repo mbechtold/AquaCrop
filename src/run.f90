@@ -3176,6 +3176,36 @@ subroutine SetalfaHIAdj(alfaHIAdj_in)
 end subroutine SetalfaHIAdj
 
 
+real(sp) function GettDaysZmin()
+    !! Getter for the "tDaysZmin" global variable.
+
+    GettDaysZmin = tDaysZmin
+end function GettDaysZmin
+
+
+subroutine SettDaysZmin(tDaysZmin_in)
+    !! Setter for the "tDaysZmin" global variable.
+    real(sp), intent(in) :: tDaysZmin_in
+
+    tDaysZmin = tDaysZmin_in
+end subroutine SettDaysZmin
+
+
+real(sp) function GettGDDZmin()
+    !! Getter for the "tGDDZmin" global variable.
+
+    GettGDDZmin = tGDDZmin
+end function GettGDDZmin
+
+
+subroutine SettGDDZmin(tGDDZmin_in)
+    !! Setter for the "tGDDZmin" global variable.
+    real(sp), intent(in) :: tGDDZmin_in
+
+    tGDDZmin = tGDDZmin_in
+end subroutine SettGDDZmin
+
+
 real(sp) function GetPreviousSumETo()
     !! Getter for the "PreviousSumETo" global variable.
 
